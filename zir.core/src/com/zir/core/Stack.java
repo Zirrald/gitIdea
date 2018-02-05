@@ -9,10 +9,10 @@ public class Stack {
     private final int stack[];
     private int top;
 
-    public Stack(int size) {
+    Stack(int size) {
         if (size < 1) {
             Print.ln("Stack size should be greater than 1");
-            JOptionPane.showMessageDialog(
+            JOptionPane.showMessageDialog (
                     null,
                     "Stack size should be greater than 1",
                     "Error",
@@ -21,7 +21,7 @@ public class Stack {
         } else {
             stack = new int[size];
             Print.ln("Stack initialized with length: "+stack.length);
-            JOptionPane.showMessageDialog(
+            JOptionPane.showMessageDialog (
                     null,
                     "Stack initialized with length: "+stack.length,
                     "Error",
@@ -33,7 +33,7 @@ public class Stack {
     public void addValue (int value) {
         if (top == stack.length - 1) {
             Print.ln("Stack is full!");
-            JOptionPane.showMessageDialog(
+            JOptionPane.showMessageDialog (
                     null,
                     "Stack is full!",
                     "Error",
@@ -44,7 +44,7 @@ public class Stack {
     public int getValue () {
         if (top < 0) {
             Print.ln("Stack is empty!");
-            JOptionPane.showMessageDialog(
+            JOptionPane.showMessageDialog (
                     null,
                     "Stack is empty!",
                     "Error",
