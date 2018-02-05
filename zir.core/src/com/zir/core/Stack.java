@@ -9,7 +9,7 @@ class Stack {
     private final int stack[];
     private int top;
 
-    Stack(int size) {
+    Stack (int size) {
         if (size < 1) {
             Print.ln("Stack size should be greater than 1");
             JOptionPane.showMessageDialog (

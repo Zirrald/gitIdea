@@ -37,7 +37,7 @@ public class Calculate {
         /* Register stack */
         Stack stack = new Stack(stackLength);
 
-        // Fill up stack
+        /* Fill up stack */
         for (; number != 0;) {
             reminder = number % 2;
             stack.addValue(reminder);
