@@ -4,7 +4,7 @@ import com.zir.util.Print;
 
 import javax.swing.*;
 
-public class Stack {
+class Stack {
 
     private final int stack[];
     private int top;
@@ -30,7 +30,7 @@ public class Stack {
         top = -1;
     }
 
-    public void addValue (int value) {
+    void addValue (int value) {
         if (top == stack.length - 1) {
             Print.ln("Stack is full!");
             JOptionPane.showMessageDialog (
@@ -41,7 +41,7 @@ public class Stack {
         } else stack[++top] = value;
     }
 
-    public int getValue () {
+    int getValue () {
         if (top < 0) {
             Print.ln("Stack is empty!");
             JOptionPane.showMessageDialog (
