@@ -25,7 +25,7 @@ class Stack {
                     null,
                     "Stack initialized with length: "+stack.length,
                     "Error",
-                    JOptionPane.ERROR_MESSAGE);
+                    JOptionPane.PLAIN_MESSAGE);
         }
         top = -1;
     }

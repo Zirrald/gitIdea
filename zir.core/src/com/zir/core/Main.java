@@ -12,6 +12,13 @@ public class Main {
                 "Yahoo!",
                 JOptionPane.PLAIN_MESSAGE);
 
-        Calculate ca = new Calculate(350).toBinary();
+        Calculate tb;
+
+        int input = Integer.parseInt(JOptionPane.showInputDialog (
+                null,
+                "Input integer number",
+                10));
+
+        tb = new Calculate(input).toBinary();
     }
 }
