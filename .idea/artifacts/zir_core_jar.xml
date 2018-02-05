@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="zir.core:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/zir_core_jar</output-path>
+    <root id="archive" name="zir.core.jar">
+      <element id="module-output" name="zir.core" />
+      <element id="module-output" name="zir.util" />
+    </root>
+  </artifact>
+</component>
