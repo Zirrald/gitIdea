@@ -17,7 +17,7 @@ class Stack {
                     "Stack size should be greater than 1",
                     "Error",
                     JOptionPane.ERROR_MESSAGE);
-            stack = new int[size];
+            stack = new int[1];
         } else {
             stack = new int[size];
             Print.ln("Stack initialized with length: "+stack.length);
