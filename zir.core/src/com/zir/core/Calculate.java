@@ -2,7 +2,7 @@ package com.zir.core;
 
 import com.zir.util.Print;
 
-import javax.swing.*;
+import javax.swing.JOptionPane;
 
 public class Calculate {
 
