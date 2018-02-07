@@ -25,7 +25,6 @@ public class Calculate {
     public Calculate toBinary () {
 
         /* Local vars */
-        int reminder;
         String result = "In binary: ";
 
         /* Calculate stack length */
