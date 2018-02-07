@@ -9,15 +9,6 @@ public class Calculate {
     private int number;
     private int stackLength;
 
-    Calculate () {
-        Print.ln("Error: missing required arguments!");
-        JOptionPane.showMessageDialog (
-                null,
-                "Error: missing required arguments!",
-                "Error",
-                JOptionPane.ERROR_MESSAGE);
-    }
-
     Calculate (int number) {
         this.number = number;
     }
@@ -26,30 +17,19 @@ public class Calculate {
 
         /* Local vars */
         String result = "In binary: ";
-
-        /* Calculate stack length */
         int tempVal = number;
 
+        /* Calculate stack length */
         for (stackLength=0; tempVal != 0; tempVal /= 2, stackLength++);
-//        for (stackLength=0; tempVal != 0; stackLength++) {
-//            tempVal /= 2;
-//        }
 
         /* Register stack */
         Stack stack = new Stack(stackLength);
 
         /* Fill up stack */
         for (; number != 0; stack.addValue(number % 2), number /= 2);
-//        for (; number != 0;) {
-//            reminder = number % 2;
-//            stack.addValue(reminder);
-//            number /= 2;
-//        }
 
         /* Form output */
         for (int i=0, counter = 0; i < stackLength; result += stack.getValue(), i++, counter++) {
-//            result += stack.getValue();
-//            counter++;
             if (counter == 4) {
                 result += " ";
                 counter = 0;
