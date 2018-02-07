@@ -40,6 +40,10 @@ cmake-build-debug/
 # IntelliJ
 /out/
 
+# Markdown Navigator plugin
+.idea/markdown-navigator.xml
+.idea/markdown-navigator/
+
 # mpeltonen/sbt-idea plugin
 .idea_modules/
 
