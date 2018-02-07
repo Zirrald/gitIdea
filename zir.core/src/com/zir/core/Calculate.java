@@ -45,8 +45,7 @@ public class Calculate {
         }
 
         /* Form output */
-        int counter = 0;
-        for (int i=0; i < stackLength; i++) {
+        for (int i=0, counter = 0; i < stackLength; i++) {
             result += stack.getValue();
             counter++;
             if (counter == 4) {
