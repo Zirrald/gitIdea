@@ -20,13 +20,19 @@ public class Calculate {
         int tempVal = number;
 
         /* Calculate stack length */
-        for (stackLength=0; tempVal != 0; tempVal /= 2, stackLength++);
+        while (tempVal != 0) {
+            tempVal /= 2;
+            stackLength++;
+        }
 
         /* Register stack */
         Stack stack = new Stack(stackLength);
 
         /* Fill up stack */
-        for (; number != 0; stack.addValue(number % 2), number /= 2);
+        while (number != 0) {
+            stack.addValue(number % 2);
+            number /= 2;
+        }
 
         /* Form output */
         for (int i=0, counter = 0; i < stackLength; result += stack.getValue(), i++, counter++) {
